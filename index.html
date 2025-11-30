@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador ICFES 4.0 | CTHL SAS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', Arial, sans-serif; }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>CTHL SAS</h1>
+        <p>Analizador de Desempeño ICFES 4.0 por el Profe Lapeira</p>
+    </header>
+
+    <div class="container">
+        
+        <form id="quizForm">
+            
+            <div id="contact-form">
+                <h2>Completa tus datos para iniciar el simulacro</h2>
+                <input type="text" id="studentName" placeholder="Tu Nombre Completo" required>
+                <input type="email" id="studentEmail" placeholder="Tu Correo Electrónico" required>
+                <input type="tel" id="studentPhone" placeholder="Tu Número de Celular" required>
+            </div>
+
+            <div class="quiz-content">
+                <div class="question-section">
+                    <p class="question-area">Lectura Crítica</p>
+                    <div class="question-item">
+                        <p class="question-text">Q1. Según el texto, ¿Cuál es el propósito principal del autor al usar la metáfora "espejo roto"?</p>
+                        <label><input type="radio" name="q1" value="A"> Criticar la fragmentación social actual.</label>
+                        <label><input type="radio" name="q1" value="B"> Describir un objeto dañado en una casa antigua.</label>
+                        <label><input type="radio" name="q1" value="C"> Reflejar la belleza de la imperfección humana.</label>
+                        <label><input type="radio" name="q1" value="D"> Mostrar la distorsión de la realidad a través de la tecnología.</label>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-text">Q2. ¿Cuál de las siguientes opciones contradice directamente la tesis central del argumento expuesto en el párrafo tres?</p>
+                        <label><input type="radio" name="q2" value="A"> La tesis del párrafo tres.</label>
+                        <label><input type="radio" name="q2" value="B"> Una opción que contradice la tesis.</label>
+                        <label><input type="radio" name="q2" value="C"> Una opción que apoya la tesis.</label>
+                        <label><input type="radio" name="q2" value="D"> Una opción irrelevante.</label>
+                    </div>
+                     <div class="question-item">
+                        <p class="question-text">Q3. ¿Qué se puede inferir sobre la posición del autor respecto a la educación tradicional?</p>
+                        <label><input type="radio" name="q3" value="A"> La considera obsoleta e ineficaz para el mundo moderno.</label>
+                        <label><input type="radio" name="q3" value="B"> La ve como el único camino hacia el desarrollo intelectual.</label>
+                        <label><input type="radio" name="q3" value="C"> Sugiere una reforma moderada, manteniendo sus fundamentos.</label>
+                        <label><input type="radio" name="q3" value="D"> No emite ninguna opinión al respecto.</label>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-text">Q4. Si el texto fuera publicado en un periódico liberal, ¿qué efecto tendría la inclusión de la cita de un autor conservador?</p>
+                        <label><input type="radio" name="q4" value="A"> Desacreditaría la línea editorial del periódico.</label>
+                        <label><input type="radio" name="q4" value="B"> Proporcionaría un contrapunto para fortalecer el argumento principal.</label>
+                        <label><input type="radio" name="q4" value="C"> Generaría confusión entre los lectores habituales.</label>
+                        <label><input type="radio" name="q4" value="D"> Sería una falta de rigor periodístico.</label>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-text">Q5. ¿Cuál es el significado más adecuado para la palabra "ubérrimo" en el contexto de la frase: "un campo ubérrimo de posibilidades"?</p>
+                        <label><input type="radio" name="q5" value="A"> Escaso.</label>
+                        <label><input type="radio" name="q5" value="B"> Árido.</label>
+                        <label><input type="radio" name="q5" value="C"> Fértil o abundante.</label>
+                        <label><input type="radio" name="q5" value="D"> Desconocido.</label>
+                    </div>
+                </div>
+                
+                <div class="question-section">
+                    <p class="question-area">Matemáticas</p>
+                    <div class="question-item">
+                        <p class="question-text">Q6. Un camión gasta 10 litros de gasolina cada 100 km. Si el viaje es de 350 km, ¿cuántos litros necesita?</p>
+                        <label><input type="radio" name="q6" value="A"> 30 litros.</label>
+                        <label><input type="radio" name="q6" value="B"> 32.5 litros.</label>
+                        <label><input type="radio" name="q6" value="C"> 35 litros.</label>
+                        <label><input type="radio" name="q6" value="D"> 40 litros.</label>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-text">Q7. Si el área de un cuadrado es 16 cm², ¿cuál es la longitud de su diagonal? (Se espera que el usuario aplique el Teorema de Pitágoras).</p>
+                        <label><input type="radio" name="q7" value="A"> 4 cm.</label>
+                        <label><input type="radio" name="q7" value="B"> 4√2 cm.</label>
+                        <label><input type="radio" name="q7" value="C"> 8 cm.</label>
+                        <label><input type="radio" name="q7" value="D"> 16 cm.</label>
+                    </div>
+                     <div class="question-item">
+                        <p class="question-text">Q8. La gráfica muestra el crecimiento de la población entre 2000 y 2010. ¿Cuál es la tasa de crecimiento anual promedio en ese periodo?</p>
+                        <label><input type="radio" name="q8" value="A"> 1.5%.</label>
+                        <label><input type="radio" name="q8" value="B"> 2.0%.</label>
+                        <label><input type="radio" name="q8" value="C"> 2.5%.</label>
+                        <label><input type="radio" name="q8" value="D"> No se puede determinar.</label>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-text">Q9. ¿Cuál de las siguientes ecuaciones representa una función lineal que pasa por el punto (2, 5)?</p>
+                        <label><input type="radio" name="q9" value="A"> y = x + 2.</label>
+                        <label><input type="radio" name="q9" value="B"> y = 2x + 1.</label>
+                        <label><input type="radio" name="q9" value="C"> y = 3x - 1.</label>
+                        <label><input type="radio" name="q9" value="D"> y = 5x - 5.</label>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-text">Q10. Se lanzan dos dados simultáneamente. ¿Cuál es la probabilidad de que la suma de los resultados sea 7?</p>
+                        <label><input type="radio" name="q10" value="A"> 1/36.</label>
+                        <label><input type="radio" name="q10" value="B"> 1/12.</label>
+                        <label><input type="radio" name="q10" value="C"> 1/6.</label>
+                        <label><input type="radio" name="q10" value="D"> 7/36.</label>
+                    </div>
+                </div>
+                
+                <div class="question-section">
+                    <p class="question-area">Ciencias Naturales</p>
+                    <div class="question-item">
+                        <p class="question-text">Q11. ¿Cuál es la principal función de las mitocondrias en una célula eucariota?</p>
+                        <label><input type="radio" name="q11" value="A"> Síntesis de proteínas.</label>
+                        <label><input type="radio" name="q11" value="B"> Producción de energía (ATP) mediante respiración celular.</label>
+                        <label><input type="radio" name="q11" value="C"> Almacenamiento de material genético.</label>
+                        <label><input type="radio" name="q11" value="D"> Digestión de residuos celulares.</label>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-text">Q12. ¿Qué principio rige el movimiento de un satélite alrededor de la Tierra en términos de fuerzas?</p>
+                        <label><input type="radio" name="q12" value="A"> El principio de inercia de Newton.</label>
+                        <label><input type="radio" name="q12" value="B"> La conservación de la energía cinética.</label>
+                        <label><input type="radio" name="q12" value="C"> La Ley de Hooke.</label>
+                        <label><input type="radio" name="q12" value="D"> La Ley de Gravitación Universal y la fuerza centrípeta.</label>
+                    </div>
+                     <div class="question-item">
+                        <p class="question-text">Q13. Al aumentar la temperatura de una reacción química, ¿qué efecto principal se espera en la velocidad de la reacción?</p>
+                        <label><input type="radio" name="q13" value="A"> Disminuye, debido a la desnaturalización de los reactivos.</label>
+                        <label><input type="radio" name="q13" value="B"> Permanece constante, pues la velocidad depende de la concentración.</label>
+                        <label><input type="radio" name="q13" value="C"> Aumenta, ya que incrementa la energía cinética y la frecuencia de colisiones efectivas.</label>
+                        <label><input type="radio" name="q13" value="D"> Aumenta, debido a una disminución en la energía de activación.</label>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-text">Q14. En un ecosistema, ¿qué organismos se clasifican como productores primarios?</p>
+                        <label><input type="radio" name="q14" value="A"> Las plantas y las algas que realizan fotosíntesis.</label>
+                        <label><input type="radio" name="q14" value="B"> Los herbívoros.</label>
+                        <label><input type="radio" name="q14" value="C"> Los descomponedores (bacterias y hongos).</label>
+                        <label><input type="radio" name="q14" value="D"> Los carnívoros.</label>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-text">Q15. ¿Cuál es el pH de una solución ácida?</p>
+                        <label><input type="radio" name="q15" value="A"> Mayor a 7.</label>
+                        <label><input type="radio" name="q15" value="B"> Menor a 7.</label>
+                        <label><input type="radio" name="q15" value="C"> Igual a 7.</label>
+                        <label><input type="radio" name="q15" value="D"> El pH no aplica a soluciones ácidas.</label>
+                    </div>
+                </div>
+                
+                <div class="question-section">
+                    <p class="question-area">Sociales y Ciudadanas</p>
+                    <div class="question-item">
+                        <p class="question-text">Q16. ¿Cuál es la principal función de la rama Ejecutiva del poder público en Colombia?</p>
+                        <label><input type="radio" name="q16" value="A"> Controlar el cumplimiento de la Constitución.</label>
+                        <label><input type="radio" name="q16" value="B"> Crear y modificar las leyes.</label>
+                        <label><input type="radio" name="q16" value="C"> Ejecutar las leyes y administrar los recursos del Estado.</label>
+                        <label><input type="radio" name="q16" value="D"> Administrar la justicia.</label>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-text">Q17. ¿Qué consecuencia histórica tuvo la Revolución Industrial a nivel demográfico?</p>
+                        <label><input type="radio" name="q17" value="A"> Una disminución general de la población debido a las guerras.</label>
+                        <label><input type="radio" name="q17" value="B"> Un estancamiento de la población rural.</label>
+                        <label><input type="radio" name="q17" value="C"> Un rápido crecimiento demográfico y la migración masiva a las ciudades (urbanización).</label>
+                        <label><input type="radio" name="q17" value="D"> La invención de métodos de control de natalidad.</label>
+                    </div>
+                     <div class="question-item">
+                        <p class="question-text">Q18. ¿Cuál es el mecanismo de participación ciudadana que permite a los ciudadanos derogar o aprobar una ley?</p>
+                        <label><input type="radio" name="q18" value="A"> El referendo.</label>
+                        <label><input type="radio" name="q18" value="B"> El cabildo abierto.</label>
+                        <label><input type="radio" name="q18" value="C"> La tutela.</label>
+                        <label><input type="radio" name="q18" value="D"> La acción de cumplimiento.</label>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-text">Q19. Un país tiene un alto Coeficiente de Gini. ¿Qué indica este dato?</p>
+                        <label><input type="radio" name="q19" value="A"> Alto nivel de desarrollo económico.</label>
+                        <label><input type="radio" name="q19" value="B"> Gran desigualdad en la distribución del ingreso.</label>
+                        <label><input type="radio" name="q19" value="C"> Baja tasa de desempleo.</label>
+                        <label><input type="radio" name="q19" value="D"> Alta inflación.</label>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-text">Q20. ¿Qué se entiende por "Estado Social de Derecho" en el contexto de la Constitución de 1991?</p>
+                        <label><input type="radio" name="q20" value="A"> Un estado donde prima la ley sobre los derechos sociales.</label>
+                        <label><input type="radio" name="q20" value="B"> Un estado que solo garantiza los derechos civiles y políticos.</label>
+                        <label><input type="radio" name="q20" value="C"> Un estado que garantiza los derechos fundamentales y el bienestar general.</label>
+                        <label><input type="radio" name="q20" value="D"> Un estado sin intervención en la economía.</label>
+                    </div>
+                </div>
+
+                <div class="question-section">
+                    <p class="question-area">Inglés</p>
+                    <div class="question-item">
+                        <p class="question-text">Q21. Choose the word that best completes the sentence: "The cat jumped ____ the table."</p>
+                        <label><input type="radio" name="q21" value="A"> for</label>
+                        <label><input type="radio" name="q21" value="B"> onto</label>
+                        <label><input type="radio" name="q21" value="C"> with</label>
+                        <label><input type="radio" name="q21" value="D"> from</label>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-text">Q22. Choose the correct synonym for "tiny."</p>
+                        <label><input type="radio" name="q22" value="A"> Huge</label>
+                        <label><input type="radio" name="q22" value="B"> Large</label>
+                        <label><input type="radio" name="q22" value="C"> Small</label>
+                        <label><input type="radio" name="q22" value="D"> Strong</label>
+                    </div>
+                     <div class="question-item">
+                        <p class="question-text">Q23. If the sign says: "WET PAINT. DO NOT TOUCH," what is its primary purpose?</p>
+                        <label><input type="radio" name="q23" value="A"> To give a warning.</label>
+                        <label><input type="radio" name="q23" value="B"> To advertise a service.</label>
+                        <label><input type="radio" name="q23" value="C"> To inform about a product.</label>
+                        <label><input type="radio" name="q23" value="D"> To ask for help.</label>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-text">Q24. Complete the sentence: "If I won the lottery, I ____ a new house."</p>
+                        <label><input type="radio" name="q24" value="A"> buy</label>
+                        <label><input type="radio" name="q24" value="B"> will buy</label>
+                        <label><input type="radio" name="q24" value="C"> am buying</label>
+                        <label><input type="radio" name="q24" value="D"> would buy</label>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-text">Q25. Choose the option that best replaces the blank: "The student ____ finished his homework early."</p>
+                        <label><input type="radio" name="q25" value="A"> are</label>
+                        <label><input type="radio" name="q25" value="B"> have</label>
+                        <label><input type="radio" name="q25" value="C"> has</label>
+                        <label><input type="radio" name="q25" value="D"> do</label>
+                    </div>
+                </div>
+
+                <button type="submit">TERMINAR SIMULACRO Y OBTENER DIAGNÓSTICO</button>
+            </div>
+        </form>
+        
+        <div id="results">
+            <h2>✅ Tu Reporte de Diagnóstico CTHL SAS</h2>
+            <p>¡Hola, <span id="report-name" style="color: var(--color-secundario); font-weight: bold;"></span>! El **Profe Lapeira** analizó tu desempeño. Aquí están tus áreas críticas:</p>
+            
+            <div id="lc-diagnose"></div>
+            <div id="mat-diagnose"></div>
+            <div id="cn-diagnose"></div>
+            <div id="soc-diagnose"></div>
+            <div id="eng-diagnose"></div>
+            
+            <div id="cta-area">
+                <p style="margin-top: 20px; line-height: 1.4;">**CONCLUSIÓN:** Tu principal área de enfoque es <span id="main-weakness" class="diagnose-area" style="color: var(--color-alerta); font-weight: 900;"></span>. Para una solución definitiva e inmediata, sigue la recomendación del **Profe Lapeira**:</p>
+                
+                <a id="cta-video" href="#" target="_blank" class="cta-link">🎬 Ve el Video GRATUITO de YouTube que corrige ese fallo.</a>
+                <a id="cta-course" href="#" target="_blank" class="cta-link">🚀 Habla con un asesor de CTHL SAS para tu plan de estudio completo.</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+
+    <footer>
+        <p style="text-align: center; font-size: 0.8em; color: #757575; padding: 20px 0;">
+            &copy; <span id="current-year"></span> CTHL SAS - Centro de Tutorías. Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

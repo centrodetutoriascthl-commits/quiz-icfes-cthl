@@ -1,0 +1,186 @@
+/* Variables de Marca CTHL SAS (Basado en el Manual de Marca) */
+:root {
+    /* Colores primarios del Manual de Marca */
+    --color-principal: #24ACB5; [span_0](start_span)/* Teal[span_0](end_span) */
+    --color-secundario: #1D74BB; [span_1](start_span)/* Dark Blue[span_1](end_span) */
+    --color-gris-footer: #757575; [span_2](start_span)/* Gris para textos secundarios[span_2](end_span) */
+    
+    /* Colores de funcionalidad */
+    --color-exito: #1e7e34; /* Usado para CTA de WhatsApp o diagnósticos altos */
+    --color-alerta: #dc3545; /* Usado para diagnósticos bajos */
+    --color-advertencia: #ffc107; /* Usado para diagnósticos intermedios */
+    
+    /* Fondos y Bordes */
+    --color-fondo-reporte: #f8f9fa; 
+    --color-borde-diagnostico: #e9ecef; 
+    
+    [span_3](start_span)/* Tipografía (Roboto es la secundaria, que se parece a la principal en la web)[span_3](end_span) */
+    --font-principal: 'Roboto', Arial, sans-serif;
+}
+
+body { 
+    font-family: var(--font-principal); 
+    margin: 0; 
+    background-color: #f4f4f9; 
+    color: #333; 
+    line-height: 1.6;
+}
+
+header { 
+    text-align: center; 
+    padding: 30px 20px; 
+    background-color: var(--color-principal); 
+    color: white; 
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.question-section { 
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+    background-color: white; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.question-area { 
+    font-size: 1.3em; 
+    font-weight: bold; 
+    margin-bottom: 15px; 
+    color: var(--color-secundario); 
+    border-bottom: 2px solid var(--color-principal);
+    padding-bottom: 5px;
+}
+.question-text { 
+    margin-bottom: 15px; 
+    font-weight: 600;
+}
+label { 
+    display: block; 
+    margin: 10px 0; 
+    cursor: pointer; 
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+label:hover {
+    background-color: #f0f0f0;
+}
+input[type="radio"] { 
+    margin-right: 10px; 
+    accent-color: var(--color-principal); 
+}
+#contact-form { 
+    margin-bottom: 30px; 
+    padding: 25px; 
+    border: 2px solid var(--color-secundario); 
+    border-radius: 8px; 
+    background-color: #f7f9fd; 
+}
+#contact-form input { 
+    padding: 10px; 
+    width: calc(100% - 22px); 
+    margin-top: 5px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+button { 
+    padding: 12px 25px; 
+    background-color: var(--color-secundario); 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 1.1em; 
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+button:hover { 
+    background-color: #165a95; 
+}
+
+
+#results { 
+    margin-top: 30px; 
+    padding: 30px; 
+    border: 1px solid var(--color-borde-diagnostico); 
+    border-radius: 8px; 
+    background-color: var(--color-fondo-reporte); 
+    display: none; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#results h2 {
+    color: var(--color-secundario); 
+    border-bottom: 2px solid var(--color-principal);
+    padding-bottom: 10px;
+}
+
+.diagnose-area-item {
+    margin: 15px 0; 
+    padding: 15px;
+    border: 1px solid var(--color-borde-diagnostico); 
+    border-left: 5px solid var(--color-principal);
+    border-radius: 6px;
+    background-color: white; 
+    line-height: 1.6;
+}
+
+.diagnose-area-item p {
+    margin: 8px 0;
+}
+
+#cta-area {
+    margin-top: 40px; 
+    padding-top: 20px;
+    border-top: 1px solid var(--color-borde-diagnostico);
+}
+
+.cta-link {
+    padding: 15px 10px; 
+    border-radius: 5px;
+    text-align: center;
+    margin: 15px 0; 
+    font-size: 1.1em;
+    font-weight: bold;
+    display: block;
+    text-decoration: none; 
+}
+
+#cta-video {
+    background-color: var(--color-principal); 
+    color: white !important;
+}
+
+#cta-course {
+    background-color: var(--color-exito); 
+    color: white !important;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    color: var(--color-gris-footer);
+}
