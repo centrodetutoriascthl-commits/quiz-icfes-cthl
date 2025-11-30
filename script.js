@@ -1,7 +1,7 @@
 // 🚨🚨🚨 DATOS DE CONEXIÓN ACTUALIZADOS 🚨🚨🚨
 
 // 1. URL GENERADA EN GOOGLE APPS SCRIPT
-const GOOGLE_APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwBR6jv1eHUmqTuEWWdX0tsZLyYatA7goVHw8WCg6r9BJkImD_JNobSW5YEJfelHLq6jQ/exec';
+const GOOGLE_APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwIL-uKMn5Xzzs_BFMGtdT-nj91STogWXkf5LOrkbFhLf7Q0I1fFh9Sbe5BM0hFYmFYaQ/exec';
 
 // 2. NÚMERO DE WHATSAPP (573045582718)
 const WHATSAPP_NUMBER = '573045582718'; 
@@ -224,4 +224,5 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
         submitButton.textContent = originalButtonText;
         submitButton.disabled = false;
     });
+
 });
