@@ -185,17 +185,27 @@ footer {
     color: var(--color-gris-footer);
 
 }
-/* --- CORRECCIÓN DE VISIBILIDAD DE BOTONES EN RESULTADOS --- */
+/* --- CORRECCIÓN FINAL DE VISIBILIDAD DE BOTONES --- */
 
-/* Esta regla fuerza a que los botones dentro de la sección de resultados sean visibles */
-#results button {
-    /* El valor de background-color ya se hereda de la regla 'button', pero lo forzamos con una clase específica si existe conflicto. */
-    opacity: 1 !important; /* Asegura que la transparencia se desactive */
-    background-color: var(--color-secundario) !important; /* Fuerza el color azul */
+/* 1. Botón de ENVÍO (TERMINAR SIMULACRO) */
+/* Selector para el botón de submit dentro del quiz. Fuerza el color azul. */
+.quiz-content button[type="submit"] {
+    background-color: var(--color-secundario) !important; 
+    color: white !important; /* Asegura texto blanco */
+    opacity: 1 !important; /* Garantiza visibilidad inmediata */
 }
 
-/* Si tu botón de WhatsApp tiene una clase específica (ej: .whatsapp-button), añádele este estilo */
-.whatsapp-button {
-    background-color: #25D366 !important; /* Verde WhatsApp */
+/* 2. Botones de CTA (WhatsApp y Video) */
+/* El #cta-course es el de WhatsApp. Usamos su ID para el color verde. */
+#cta-course {
+    background-color: #25D366 !important; /* Verde WhatsApp fijo */
+    color: white !important;
+    opacity: 1 !important;
+}
+
+/* El #cta-video es el del video. Usamos su ID para el color azul por defecto. */
+#cta-video {
+    background-color: var(--color-secundario) !important; /* Azul fijo */
+    color: white !important;
     opacity: 1 !important;
 }
