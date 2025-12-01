@@ -106,7 +106,7 @@ input[type="radio"] {
 button { 
     padding: 12px 25px; 
     background-color: var(--color-secundario); 
-    color: white; 
+    color: blue; 
     border: none; 
     border-radius: 5px; 
     cursor: pointer; 
@@ -171,12 +171,12 @@ button:hover {
 
 #cta-video {
     background-color: var(--color-principal); 
-    color: white !important;
+    color: blue !important;
 }
 
 #cta-course {
     background-color: var(--color-exito); 
-    color: white !important;
+    color: blue !important;
 }
 
 footer {
@@ -184,37 +184,4 @@ footer {
     text-align: center;
     color: var(--color-gris-footer);
 
-}
-/* --- CORRECCIÓN FINAL DE VISIBILIDAD DE BOTONES --- */
-
-/* 1. Botón de ENVÍO (TERMINAR SIMULACRO) */
-/* Este selector fuerza el color de fondo en el estado normal, resolviendo la transparencia. */
-.quiz-content button[type="submit"] {
-    background-color: var(--color-secundario) !important; 
-    color: white !important; 
-    opacity: 1 !important; 
-}
-
-/* Mantenemos el efecto de realce al pasar el cursor */
-.quiz-content button[type="submit"]:hover {
-    background-color: var(--color-secundario-dark) !important; /* Asumo que tienes una variable más oscura o usa un azul más oscuro aquí */
-}
-
-/* 2. Botón CTA VIDEO (Para que siempre sea azul y visible) */
-#cta-video {
-    background-color: var(--color-secundario) !important;
-    color: white !important;
-    opacity: 1 !important;
-}
-
-/* 3. Botón CTA CURSO/WHATSAPP (Para que siempre sea verde y visible) */
-#cta-course {
-    background-color: #25D366 !important; /* Verde WhatsApp fijo */
-    color: white !important;
-    opacity: 1 !important;
-}
-
-/* Mantenemos el efecto de realce al pasar el cursor para los CTA */
-.cta-link:hover {
-    opacity: 0.85 !important; /* Se vuelve un poco más transparente al pasar el cursor */
 }
