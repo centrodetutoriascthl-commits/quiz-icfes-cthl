@@ -183,4 +183,19 @@ footer {
     padding: 10px;
     text-align: center;
     color: var(--color-gris-footer);
+
+}
+/* --- CORRECCIÓN DE VISIBILIDAD DE BOTONES EN RESULTADOS --- */
+
+/* Esta regla fuerza a que los botones dentro de la sección de resultados sean visibles */
+#results button {
+    /* El valor de background-color ya se hereda de la regla 'button', pero lo forzamos con una clase específica si existe conflicto. */
+    opacity: 1 !important; /* Asegura que la transparencia se desactive */
+    background-color: var(--color-secundario) !important; /* Fuerza el color azul */
+}
+
+/* Si tu botón de WhatsApp tiene una clase específica (ej: .whatsapp-button), añádele este estilo */
+.whatsapp-button {
+    background-color: #25D366 !important; /* Verde WhatsApp */
+    opacity: 1 !important;
 }
