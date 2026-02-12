@@ -6,7 +6,7 @@ const GENERAL_VIDEO_URL = 'https://youtube.com/watch?v=HhpiFvGjXKU&si=Urs85z45ab
 const VIDEO_LINKS = { lc: GENERAL_VIDEO_URL, mat: GENERAL_VIDEO_URL, cn: GENERAL_VIDEO_URL, soc: GENERAL_VIDEO_URL, eng: GENERAL_VIDEO_URL };
 const CTA_MESSAGE = 'Hola CTHL SAS, acabo de completar el Analizador ICFES 4.0. ¡Quiero mi plan personalizado!';
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(CTA_MESSAGE)}`;
-
+const ACCESS_PASSWORD = "CTHLIEJV";
 const correctAnswers = {
     q1: 'D', q2: 'C', q3: 'C', q4: 'B', q5: 'C', 
     q6: 'C', q7: 'C', q8: 'B', q9: 'B', q10: 'C', 
@@ -140,7 +140,27 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
 
     fetch(GOOGLE_APP_SCRIPT_URL, { method: 'POST', body: formData, mode: 'no-cors' })
     .catch(err => console.log("Envío omitido o error de red"));
+   // Ejecutar apenas cargue la página
+window.onload = function() {
+    // Ocultamos el formulario inicialmente por seguridad
+    document.getElementById('quizForm').style.opacity = "0.1";
+    document.getElementById('quizForm').style.pointerEvents = "none";
+
+    let intento = "";
+    intento = prompt("🔐 CTHL SAS - Acceso Restringido.\n\nPor favor, ingresa la clave de acceso institucional:");
+
+    if (intento === ACCESS_PASSWORD) {
+        alert("✅ Acceso concedido. ¡Éxito en tu diagnóstico, futuro profesional!");
+        document.getElementById('quizForm').style.opacity = "1";
+        document.getElementById('quizForm').style.pointerEvents = "all";
+    } else {
+        alert("❌ Clave incorrecta. Contacta al Profe Lapeira para obtener acceso.");
+        // Redirigir a tu WhatsApp si falla
+        window.location.href = `https://wa.me/${WHATSAPP_NUMBER}`;
+    }
+}; 
 });
 
 });
+
 
