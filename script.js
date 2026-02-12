@@ -7,25 +7,24 @@ const VIDEO_LINKS = { lc: GENERAL_VIDEO_URL, mat: GENERAL_VIDEO_URL, cn: GENERAL
 const CTA_MESSAGE = 'Hola CTHL SAS, acabo de completar el Analizador ICFES 4.0. ¡Quiero mi plan personalizado!';
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(CTA_MESSAGE)}`;
 const ACCESS_PASSWORD = "CTHLIEJV"; // Tu clave personalizada
+// 🔐 2. COLOCA EL BLOQUEO AQUÍ (Justo debajo de las constantes)
+document.addEventListener('DOMContentLoaded', function() {
+    const formulario = document.getElementById('quizForm');
+    if (formulario) {
+        formulario.style.display = "none"; // Desaparece el formulario de entrada
 
-// -------------------------------------------------------------
-// 🔐 BLOQUEO DE SEGURIDAD (Se ejecuta apenas carga la página)
-// -------------------------------------------------------------
-window.onload = function() {
-    document.getElementById('quizForm').style.opacity = "0.1";
-    document.getElementById('quizForm').style.pointerEvents = "none";
+        let intento = prompt("🔐 CTHL SAS - Acceso Restringido.\n\nIngresa la clave de acceso institucional:");
 
-    let intento = prompt("🔐 CTHL SAS - Acceso Restringido.\n\nPor favor, ingresa la clave de acceso institucional:");
-
-    if (intento === ACCESS_PASSWORD) {
-        alert("✅ Acceso concedido. ¡Éxito en tu diagnóstico, futuro profesional!");
-        document.getElementById('quizForm').style.opacity = "1";
-        document.getElementById('quizForm').style.pointerEvents = "all";
-    } else {
-        alert("❌ Clave incorrecta. Contacta al Profe Lapeira.");
-        window.location.href = `https://wa.me/${WHATSAPP_NUMBER}`;
+        if (intento === ACCESS_PASSWORD) {
+            alert("✅ Acceso concedido.");
+            formulario.style.display = "block"; // Solo aparece si la clave es correcta
+        } else {
+            alert("❌ Clave incorrecta.");
+            window.location.href = `https://wa.me/${WHATSAPP_NUMBER}`;
+        }
     }
-};
+});
+
 const correctAnswers = {
     q1: 'D', q2: 'C', q3: 'C', q4: 'B', q5: 'C', 
     q6: 'C', q7: 'C', q8: 'B', q9: 'B', q10: 'C', 
@@ -161,6 +160,7 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
     .catch(err => console.log("Envío omitido o error de red"));
 
 });
+
 
 
 
