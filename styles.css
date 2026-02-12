@@ -183,5 +183,21 @@ footer {
     padding: 10px;
     text-align: center;
     color: var(--color-gris-footer);
+}
+.reading-box {
+    background-color: #f9f9f9;
+    border-left: 5px solid #2c3e50; /* Un color serio para CTHL SAS */
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    font-style: italic;
+    line-height: 1.6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
+.reading-box h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 1.1em;
+    text-transform: uppercase;
 }
